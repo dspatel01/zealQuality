@@ -1,0 +1,330 @@
+@media screen and (max-width:767px) {
+    .homePage-service-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+    }
+
+    .service-rightSide {
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        margin: 0 10%;
+    }
+
+    .service-rightSide .imageBox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .service-rightSide .imageBox .imageBox1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 220px;
+        border-radius: 50%;
+        position: relative;
+        right: 20px;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.158);
+        transition: all 0.5s ease-in-out;
+        background: #fff;
+    }
+
+    .service-rightSide .imageBox .imageBox2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -30px;
+        width: 50%;
+        border-radius: 50%;
+        height: 220px;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.158);
+        transition: all 0.5s ease-in-out;
+        background: #fff;
+    }
+
+    .service-rightSide .imageBox .imageBox3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 20px;
+        top: 20px;
+        width: 50%;
+        height: 220px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.158);
+        transition: all 0.5s ease-in-out;
+        background: #fff;
+    }
+
+    .service-rightSide .imageBox .imageBox4 {
+        position: relative;
+        width: 50%;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        /* bottom: 10px; */
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.158);
+        transition: all 0.5s ease-in-out;
+        background: #fff;
+    }
+
+    .service-leftSide {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: -40px;
+        margin-top: 20px;
+
+    }
+
+    .service-content-side {
+        position: relative;
+        width: 90%;
+    }
+
+    .heading {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    /* .heading h2{
+       font-size: 5vmax;
+
+      } */
+    .service-content-side p {
+        width: 95%;
+        margin: 0 auto;
+        text-align: justify;
+        font-size: 16px;
+    }
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1100px) {
+
+    .homePage-service-container {
+        margin: 50px 0;
+        width: 100%;
+        height: fit-content;
+        background-color: var(--section-bg-color);
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 80px 0;
+    }
+
+    .service-rightSide {
+        display: flex;
+        width: 44%;
+        margin-left: 30px;
+    }
+
+    .service-rightSide .imageBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-rightSide .imageBox .imageBox1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 220px;
+        border-radius: 50%;
+        position: relative;
+
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.158);
+        transition: all 0.5s ease-in-out;
+        background: #fff;
+    }
+
+    .service-rightSide .imageBox .imageBox1:hover {
+        box-shadow: 8px 8px 10px 2px rgba(0, 0, 0, 0.158), -2px 8px 10px 2px rgba(0, 0, 0, 0.158);
+        transform: scale(1.1);
+    }
+
+    .service-rightSide .imageBox .imageBox1 img {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        object-fit: contain;
+    }
+
+    .service-rightSide .imageBox .imageBox2 {
+
+        width: 50%;
+        border-radius: 50%;
+        height: 220px;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.158);
+        transition: all 0.5s ease-in-out;
+        background: #fff;
+    }
+
+    .service-rightSide .imageBox .imageBox2:hover {
+        box-shadow: 8px 8px 10px 2px rgba(0, 0, 0, 0.158), -2px 8px 10px 2px rgba(0, 0, 0, 0.158);
+        transform: scale(1.1);
+    }
+
+    .service-rightSide .imageBox .imageBox2 img {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .service-rightSide .imageBox .imageBox3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 220px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.158);
+        transition: all 0.5s ease-in-out;
+        background: #fff;
+    }
+
+    .service-rightSide .imageBox .imageBox3:hover {
+        box-shadow: 8px 8px 10px 2px rgba(0, 0, 0, 0.158), -2px 8px 10px 2px rgba(0, 0, 0, 0.158);
+        transform: scale(1.1);
+    }
+
+    .service-rightSide .imageBox .imageBox3 img {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+    }
+
+    .service-rightSide .imageBox .imageBox4 {
+        position: relative;
+        width: 50%;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        bottom: 10px;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.158);
+        transition: all 0.5s ease-in-out;
+        background: #fff;
+    }
+
+    .service-rightSide .imageBox .imageBox4:hover {
+        box-shadow: 8px 8px 10px 2px rgba(0, 0, 0, 0.158), -2px 8px 10px 2px rgba(0, 0, 0, 0.158);
+        transform: scale(1.1);
+    }
+
+    .service-rightSide .imageBox .imageBox4 img {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        object-fit: fill;
+    }
+
+    .service-leftSide {
+        width: 43%;
+    }
+
+    .service-content-side {
+        position: relative;
+    }
+
+    .service-content-side p {
+        margin: 30px 40px 0 0;
+        /* font-size: 1.3rem; */
+        text-align: justify;
+    }
+
+}
+
+.cookie-container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #2f3640;
+    color: #f5f6fa;
+    padding: 0 32px;
+    z-index: 1000001;
+    box-shadow: 0 -2px 16px #2f3640;
+}
+
+.cookie-container.active {
+    bottom: 0;
+}
+
+.cookie-container p {
+    padding-top: 30px;
+    color: #f5f6fa;
+}
+
+.cookie-container a {
+    color: #f5f6fa;
+    text-decoration: underline;
+}
+
+.cookie-btn {
+    background-color: #e84118;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 48px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.testimonial-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  }
+  
+  .testimonial {
+    flex: 0 0 auto;
+    width: 80%;
+    margin: 0 10px;
+    scroll-snap-align: start;
+  }
+  
+  .testimonial-content {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .rating {
+    color: gold;
+    font-size: 24px;
+  }
+  
+  .name {
+    margin-top: 10px;
+  }
+  
