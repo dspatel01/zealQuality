@@ -23,7 +23,7 @@
         var totalScroll = offsetTop-navheight;
   
         $('body,html').animate({
-        scrollTop: totalScroll
+        scrollTop: totalScrollnavbarLightDropdownMenuLink
         }, 300);
       }
     });

@@ -45,36 +45,68 @@
 // });
 
 
-// year of working section
 
-let valueDisplays = document.querySelectorAll(".numCounter");
-let interval = 1000;
 
-valueDisplays.forEach(valueDisplay => {
-    let startValue = 0;
-    let endValue = parseInt(valueDisplay.getAttribute('data-val'));
-    let duration = Math.floor(interval / endValue);
-    let counter = setInterval(function () {
-        startValue += 1;
-        valueDisplay.textContent = startValue;
-        if (startValue == endValue) {
-            clearInterval(counter);
-        }
-    }, duration)
-    // console.log(endValue)
-})
 
 
 const cookieContainer = document.querySelector(".cookie-container");
 const cookieBtn = document.querySelector(".cookie-btn");
 
-cookieBtn.addEventListener('click', ()=>{
+cookieBtn.addEventListener('click', () => {
     cookieContainer.classList.remove("active");
-    localStorage.setItem("cookieBannerDisplayed","true")
+    localStorage.setItem("cookieBannerDisplayed", "true")
 });
 
-setTimeout(()=>{
-    if(!localStorage.getItem("cookieBannerDisplayed")){
+setTimeout(() => {
+    if (!localStorage.getItem("cookieBannerDisplayed")) {
         cookieContainer.classList.add("active");
-    }  
-},2000)
+    }
+}, 2000)
+
+
+
+
+
+let sectionInView = false;
+
+window.addEventListener('scroll', function() {
+  const section = document.getElementById('section');
+  const sectionTop = section.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  // Check if section is in the viewport
+  if (sectionTop < windowHeight / 1.2 && sectionTop > -section.clientHeight) {
+    if (!sectionInView) {
+      sectionInView = true;
+      startCounters();
+    }
+  } else {
+    sectionInView = false;
+  }
+});
+
+function startCounters() {
+  const counters = document.querySelectorAll('.counter');
+  console.log(counters)
+  const targets = [7, 12, 150, 15]; // Example values, replace with your own
+
+  counters.forEach((counter, index) => {
+    let count = 0;
+    const target = targets[index];
+    const interval = setInterval(() => {
+      if (count < target) {
+        count++;
+        counter.textContent = count;
+      } else {
+        clearInterval(interval);
+      }
+    }, 10); // Speed of increment, lower value for faster increment
+  });
+}
+
+
+// let dropdown = document.getElementById('navbarLightDropdownMenuLink');
+// let dropdownMenu = document.getElementsByClassName('dropdown-menu')
+// dropdown.addEventListener('click',()=>{
+//   dropdownMenu.
+// })

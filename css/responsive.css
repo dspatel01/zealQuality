@@ -117,7 +117,124 @@
 
 }
 
+@media screen and (min-width:434px) and (max-width:550px) {
+    .service-rightSide {
+        display: flex;
+        width: 100%;
+        margin-left: 30px;
+    }
 
+    .service-rightSide .imageBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-rightSide .imageBox .imageBox1 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .service-rightSide .imageBox .imageBox2 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .service-rightSide .imageBox .imageBox3 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .service-rightSide .imageBox .imageBox4 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .service-leftSide {
+        width: 95%;
+
+    }
+}
+
+@media screen and (min-width:346px) and (max-width:433px) {
+    .service-rightSide {
+        display: flex;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .service-rightSide .imageBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-rightSide .imageBox .imageBox1 {
+        width: 140px;
+        height: 140px;
+    }
+
+    .service-rightSide .imageBox .imageBox2 {
+       width: 140px;
+        height: 140px;
+    }
+
+    .service-rightSide .imageBox .imageBox3 {
+       width: 140px;
+        height: 140px;
+    }
+
+    .service-rightSide .imageBox .imageBox4 {
+       width: 140px;
+        height: 140px;
+    }
+
+    .service-leftSide {
+        width: 95%;
+
+    }
+}
+@media screen and (min-width:250px) and (max-width:345px) {
+    .service-rightSide {
+        display: flex;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .service-rightSide .imageBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-rightSide .imageBox .imageBox1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .service-rightSide .imageBox .imageBox2 {
+         width: 100px;
+        height: 100px;
+    }
+
+    .service-rightSide .imageBox .imageBox3 {
+         width: 100px;
+        height: 100px;
+    }
+
+    .service-rightSide .imageBox .imageBox4 {
+         width: 100px;
+        height: 100px;
+    }
+
+    .service-leftSide {
+        width: 95%;
+
+    }
+}
 @media screen and (min-width:768px) and (max-width:1100px) {
 
     .homePage-service-container {
@@ -296,35 +413,37 @@
     border-radius: 8px;
     cursor: pointer;
 }
+
 .testimonial-slider {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
-  }
-  
-  .testimonial {
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE and Edge */
+}
+
+.testimonial {
     flex: 0 0 auto;
     width: 80%;
     margin: 0 10px;
     scroll-snap-align: start;
-  }
-  
-  .testimonial-content {
+}
+
+.testimonial-content {
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
-  }
-  
-  .rating {
+}
+
+.rating {
     color: gold;
     font-size: 24px;
-  }
-  
-  .name {
+}
+
+.name {
     margin-top: 10px;
-  }
-  
+}

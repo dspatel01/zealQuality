@@ -48,6 +48,74 @@ body {
     font-family: var(--body-font-family);
 }
 
+.topDetails {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 28px;
+    background-color: #13547a;
+    z-index: 10000001;
+    color: var(--white-color);
+}
+
+.topDetails .mail a {
+    color: var(--white-color);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.topDetails .topMobile i {
+    color: var(--white-color);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.topDetails .topSocial i {
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 0 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.topDetails .topSocial i:hover {
+    transform: scale(1.2);
+}
+
+.topDetails .topSocial .fa-whatsapp:hover {
+    color: #12e03f;
+}
+
+.topDetails .topSocial .fa-facebook-f:hover {
+    color: rgb(0, 0, 255);
+    text-shadow: 0px 0px 2px white;
+
+}
+
+.topDetails .topSocial .fa-instagram:hover {
+    color: #f53e7e;
+}
+
+.topDetails .topSocial .fa-twitter:hover {
+    color: skyblue;
+}
+
+.topDetails .topSocial .fa-linkedin-in:hover {
+    color: rgba(49, 49, 236, 0.945);
+    text-shadow: 0px 0px 2px white;
+}
+
+.topDetails a:hover {
+    color: var(--white-color);
+}
+
+.navbar {
+    position: relative;
+    top: 25px
+}
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -398,7 +466,9 @@ strong {
     border: 0;
 }
 
+
 @media screen and (min-width: 992px) {
+
     .navbar .dropdown:hover .dropdown-menu {
         opacity: 1;
         margin-top: 0;
@@ -554,6 +624,7 @@ strong {
     height: fit-content;
     min-height: 425px;
 }
+
 /* .custom-block img{
     width: 100%;
 
@@ -745,6 +816,7 @@ blockquote {
     background-position: center;
     background-size: 100%;
     position: relative;
+
 }
 
 .timeline-container .vertical-scrollable-timeline {
@@ -761,6 +833,7 @@ blockquote {
     left: 52px;
     top: 0;
     overflow: hidden;
+
 }
 
 .timeline-container .vertical-scrollable-timeline .list-progress .inner {
@@ -1154,6 +1227,7 @@ blockquote {
     justify-content: center;
     align-items: center;
     padding-top: 15px;
+    text-align: center;
 }
 
 .copyrightContent p {
@@ -1249,15 +1323,31 @@ blockquote {
         background-color: var(--secondary-color);
     }
 
+    .dropdown {
+        width: 45%;
+
+    }
+
+    .navbar .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        margin-top: 0;
+        pointer-events: auto;
+        display: inherit;
+
+    }
+
     .navbar-nav .dropdown-menu {
+        display: none;
         position: relative;
         left: 10px;
-        opacity: 1;
+        opacity: 0;
         pointer-events: auto;
         max-width: 155px;
         margin-top: 10px;
         margin-bottom: 15px;
+
     }
+
 
     .navbar-expand-lg .navbar-nav {
         padding-bottom: 20px;
@@ -1805,7 +1895,7 @@ blockquote {
 
     /* ssevrice end */
 
-/* 
+    /* 
     .enqueryFormBox {
         width: 100%;
         height: 85vh;
@@ -1879,7 +1969,7 @@ blockquote {
 
 
     /* __________________________________________ */
-/* 
+    /* 
     .enqueryFormBox {
         width: 100%;
         height: 85vh;
@@ -1970,6 +2060,7 @@ blockquote {
     .footerSection4 {
         width: 90%;
     }
+
     .query-container {
         cursor: pointer;
         position: fixed;
@@ -2004,11 +2095,22 @@ blockquote {
 
 } */
 @media screen and (max-width:520px) and (min-width:380px) {
+    .timeline-container .vertical-scrollable-timeline .list-progress {
+        width: 0px;
+        height: 87%;
+        background-color: var(--primary-color);
+        position: absolute;
+        left: 52px;
+        top: 0;
+        overflow: hidden;
+    }
+
     .custom-block-overlay {
         height: 100%;
         min-height: 400px;
         padding: 0;
     }
+
     .query-container {
         cursor: pointer;
         position: fixed;
@@ -2019,6 +2121,21 @@ blockquote {
         width: 80px;
         height: 150px;
     }
+
+    .ml12 {
+        font-weight: 200;
+
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+    }
+
+    .ml12 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+
+
 }
 
 @media screen and (max-width:379px) and (min-width:220px) {
@@ -2027,6 +2144,7 @@ blockquote {
         min-height: 400px;
         padding: 0;
     }
+
     .query-container {
         cursor: pointer;
         position: fixed;
@@ -2046,6 +2164,7 @@ blockquote {
         padding: 0;
 
     }
+
     .query-container {
         cursor: pointer;
         position: fixed;
@@ -2057,3 +2176,68 @@ blockquote {
         height: 150px;
     }
 }
+
+
+@media screen and (max-width: 624px) {
+    .topDetails .mail a {
+        color: var(--white-color);
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .topDetails .topMobile i {
+        color: var(--white-color);
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .topDetails .topSocial i {
+        cursor: pointer;
+        color: var(--white-color);
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin: 0 2px;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .topDetails {
+        display: none;
+    }
+
+    .navbar {
+        top: 0;
+    }
+
+}
+
+
+#section {
+    width: 100%;
+    ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--custom-btn-bg-hover-color);
+}
+
+/* Adjust height as needed */
+
+
+/* .box {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+ .counter {
+    font-size: 24px;
+    font-weight: bold;
+  } 
+   */
