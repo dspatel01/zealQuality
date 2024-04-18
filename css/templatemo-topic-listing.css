@@ -113,8 +113,9 @@ body {
 }
 
 .navbar {
-    position: relative;
-    top: 25px
+    background-color: var(--secondary-color);
+    /* position: relative;
+    top: 25px */
 }
 
 /*---------------------------------------
@@ -353,10 +354,11 @@ strong {
 -----------------------------------------*/
 
 .sticky-wrapper {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     right: 0;
-    left: 0;
+    left: 0; */
+    background-image: linear-gradient( 15deg, #147986c5 0%, #80d0c7 100%);
 }
 
 .sticky-wrapper.is-sticky .navbar {
@@ -405,19 +407,35 @@ strong {
 }
 
 .navbar .dropdown-menu {
-    background: var(--white-color);
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    background: #ffffff;
+    backdrop-filter: blur(5px);
     border: 0;
-    display: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     opacity: 0;
     min-width: 9rem;
     margin-top: 20px;
     padding: 13px 0 10px 0;
     transition: all 0.3s;
     pointer-events: none;
+    width: 500%;
+    padding: 10px 15px;
+}
+
+.dropBox {
+    margin-left: -200px;
+}
+
+.navbar .dropdown-menu p {
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 18px;
 }
 
 .navbar .dropdown-menu::before {
+    display: none;
     content: "";
     width: 0;
     height: 0;
@@ -426,12 +444,12 @@ strong {
     border-bottom: 15px solid var(--white-color);
     position: absolute;
     top: -10px;
-    left: 10px;
+    left: 250px;
 }
 
 .navbar .dropdown-item {
     display: inline-block;
-    color: var(--p-bg-color);
+    color: rgba(22, 22, 22, 0.815);
     font-family: var(--title-font-family);
     font-size: var(--menu-font-size);
     font-weight: var(--font-weight-medium);
@@ -473,6 +491,9 @@ strong {
         opacity: 1;
         margin-top: 0;
         pointer-events: auto;
+    }
+    .dropBox {
+        margin-left: -200px;
     }
 }
 
@@ -1332,22 +1353,58 @@ blockquote {
         opacity: 1;
         margin-top: 0;
         pointer-events: auto;
-        display: inherit;
+        display: flex;
 
     }
 
     .navbar-nav .dropdown-menu {
-        display: none;
+        background: #ffffff;
+        backdrop-filter: blur(5px);
         position: relative;
         left: 10px;
-        opacity: 0;
+        opacity: 1;
         pointer-events: auto;
-        max-width: 155px;
-        margin-top: 10px;
+        width: 215%;
+        margin-top: -10px;
         margin-bottom: 15px;
-
+        box-shadow: none;
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
+    .navbar-nav .dropdown-menu p {
+        font-size: 16px;
+        margin: 02px;
+        color: #0000009a;
+        font-weight: 600;
+    }
+
+    .navbar-nav .dropdown-menu li {
+        font-size: 16px;
+        margin: 02px;
+    }
+
+    .navbar-nav .dropdown-menu a {
+        color: #0f0e0e;
+
+    }
+    .dropBox {
+        margin-left: 0px;
+    }
+    .navbar .dropdown-menu::before {
+        display: none;
+        /* content: "";
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 15px solid var(--white-color);
+        position: absolute;
+        top: -10px;
+        left: 10px; */
+    }
 
     .navbar-expand-lg .navbar-nav {
         padding-bottom: 20px;
@@ -1415,7 +1472,9 @@ blockquote {
     h5 {
         font-size: 20px;
     }
-
+    .dropBox {
+        margin-left: 0px;
+    }
 }
 
 .ml12 {
@@ -1941,6 +2000,7 @@ blockquote {
     .queryButton .text {
         color: rgb(95, 72, 226);
     } */
+   
 
 }
 
@@ -2135,7 +2195,9 @@ blockquote {
         line-height: 1em;
     }
 
-
+    .dropBox {
+        margin-left: -10px;
+    }
 }
 
 @media screen and (max-width:379px) and (min-width:220px) {
@@ -2154,6 +2216,35 @@ blockquote {
         z-index: 1001;
         width: 80px;
         height: 150px;
+    }
+
+    .navbar .dropdown-menu {
+        /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); */
+       background-color: transparent;
+        border: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        opacity: 1;
+        min-width: fit-content;
+        /* margin-top: 20px; */
+        padding: 13px 0 10px 0;
+        transition: all 0.3s;
+        pointer-events: none;
+        width: 205%;
+        /* padding: 10px 0px; */
+        font-size: 12px;
+    }
+    .navbar .dropdown-menu li{
+        margin-left: -24px;
+    }
+    .navbar .dropdown-menu a{
+       font-size: 13px;
+    }
+
+
+    .dropBox {
+        margin-left: -10px;
     }
 }
 
